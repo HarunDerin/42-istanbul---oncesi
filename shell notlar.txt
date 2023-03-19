@@ -1,0 +1,59 @@
+ex00 = cat komutu dosyaların içini önizleme yaparak çıktı verir
+
+ex01 + ex02 | chmod = izinleri değiştirir r(okuma izni) w(yazma izni) x(çalıştırma izni) ilk3 ana kullanıcı ikinci3 grup içindeki kullanıcılara son3 bütün kullanıcılara verilen izin
+               R= 4
+               W= 2    //chmod 715 = -rwx--xr-x        
+               X= 1    //touch -t tarih/saat --- touch -t 06012047
+
+ex03= ?
+
+ex04= ls -tmp //t= düzenleme tarihine göre düzenler
+                m= virgül ile ayırır
+                p= dosyalara / ekler
+
+ex05= git commit -m Git version kontrol sistemini kullanarak bir dosya veya dosya setindeki değişiklikleri kaydetmek için kullanılır. m ise yorum satırı
+      git log --format='%H' -n5 | --format='%H' H formatında sadece adres göstericek şekilde gösterir -n5 ise 5 taneye kadar adres gösterir
+
+ex06= .DS_Store ve mywork.c dosyalarını bir .gitihnore klasörüne ekliyoruz
+      git ls-files  --exclude-standard --others --ignored | --exclude-standard= ignored in içindeki dosyaları listeler
+                                                          | --others= tüm alannları görür
+                                                          | --ignored=git ignore içindeki yazılı klasörü listeler
+   !! touch .DS_Store ve mywork.c ile klasörleri kuruyoruz
+
+ex07=diff a b > sw.diff ile a ile b birleştirilir 
+     sonra rm -rf b ile b yi siliyoruz
+     sw diff ile ayırıp b yi bulmak için | "patch a -o b < sw.diff" ile b dosyasını tekrar elde ediyoruz
+     a ile b yi biz kurup içini biz dolduruyoruz
+
+ex08=find . -type f \( -name '#*#' -o -name '*~' \) -print -delete
+     find=dosya bulucu
+     -type f= dosya tipi 
+     \( -name '#*#' -o -name '*+' \)= başı ve sonu # ve + ile bitenleri
+     -print -delete= yazdır ve sil
+
+ex09= ft_magic adında dosya oluşturup içine 41 string 42 42 file bu komut 41. stringden sonra 42 gelen dosyaları buluyor ve 42file olarak belirtiyor
+      file -m ft_magic ex09 | ex09 içinde 42. bit'a bakar "*" hepsini tarar dizini
+      bir nevi 43. biteda 42 yazması lazm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Extra:
+ls = dosyaları listeler
+pwd = mevcut dizini gösterir
+touch = klasör oluşturur
+esc + shift + : =panelden çıkar
+wq = kaydet çık
+i = yazmaya dönmek için
