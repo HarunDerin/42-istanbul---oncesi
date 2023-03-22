@@ -5,7 +5,7 @@ ex01 + ex02 | chmod = izinleri değiştirir r(okuma izni) w(yazma izni) x(çalı
                W= 2    //chmod 715 = -rwx--xr-x        
                X= 1    //touch -t tarih/saat --- touch -t 06012047
 
-ex03= ?
+ex03= cat ~/.ssh/id_rsa.pub 
 
 ex04= ls -tmp //t= düzenleme tarihine göre düzenler
                 m= virgül ile ayırır
